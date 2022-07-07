@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    /* body{font-family: 'Courier New', Courier, monospace;}
+        #box{
+            padding: 12px;
+            color: gray;
+
+        } */
+     /* input{
+            padding: 1px;
+            border: 2px solid grey;
+        }
+        label{
+            padding: 10px;
+        }
+        .red{
+            color: aqua;
+        } */
+        #box{
+            width: 200px;
+            height: 200pxpx;
+            background-color: rgb(221, 32, 32);
+            border: 2px solid red;
+            border-color: black;
+            position: absolute;
+        } 
+        /* #box{
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            color: aqua;
+            border: 2px solid red;
+            border-color: black;
+            padding: 10px;
+            left: 30px;
+            bottom: 50px;
+            position: fixed;
+        } */
+    
+</style>
+<body>
+
+    <!-- <div id="box" class="test">
+        <h2>test box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, pariatur ea. Rem iure laboriosam animi.
+        </p>
+    </div> -->
+    <!-- <h2>Form Event</h2>
+    <form action="">
+        <label for="">name</label> <input type="text" id="sname">
+        <br>
+        <label for="">class</label><input type="text" id="sclass">
+        <br>
+        <br>
+        <label for="" id="sname">Country</label>
+        <select id="scountry">
+        <option value="pakistan">pakistan</option>
+        <option value="nepal">nepal</option>
+        <option value="india">india</option>
+        <option value="turkey">turkey</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit">
+    <input type="reset">
+    </form>
+    <div id="test" style="border:2px solid green; margin-top: 25px;"> </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat eum 
+        amet pariatur omnis laborum, optio ea repudiandae, voluptate porro soluta quaerat, rerum non quia. Eius mollitia non, officiis quam et alias animi perferendis nemo laudantium, totam quos similique modi beatae iure! Enim distinctio quis rerum velit temporibus quos corrupti minima, deserunt recusandae assumenda ratione inventore dolores animi voluptas, est quae excepturi debitis quisquam vero nulla? Possimus labore numquam illo rerum blanditiis distinctio, porro repudiandae asperiores eligendi dignissimos, maiores nobis, beatae voluptatibus earum totam pariatur. Asperiores perspiciatis, voluptatem voluptatum cumque, sit, ad
+         expedita alias repellat mollitia molestias deserunt omnis explicabo!</p> -->
+  <!-- <div id="box">
+         <h2>text box</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusamus dolor nam odio corrupti veritatis?
+         </p>
+        </div>
+         <button id="append">append</button>
+         <button id="prepend">prepand</button> -->
+         <!-- <button id="empty">empty</button>
+         <button id="Remove">Remove</button> -->
+         <!-- <div id="box1">
+             <h2>helo</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id, assumenda enim praesentium consectetur fugiat minus. Iure saepe unde labore ipsum aliquam iusto, voluptate, eligendi aspernatur eveniet totam hic temporibus
+                 .</p>
+         </div>
+         <div id="box2">
+             
+             <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+         <button id="clone">clone</button> -->
+
+
+         <!-- <div id="box">
+             <h2>helo</h2>
+             <p>Lorem ipsum dolor sit amet.</p>
+             <p>Lorem ipsum dolor sit amet consectetur.</p>
+             <p>Lorem ipsum dolor sit amet consectetur.</p>
+         </div>
+         <br>
+         <button id="replace">replace</button> -->
+
+                                  <!-- wrap -->
+          <!-- <div id="box">
+                  <h2>helo</h2>
+              <p>Lorem ipsum dolor sit amet.</p>
+       </div>
+       <br>
+
+       <button id="wrap">wrap</button>
+       <button id="unwrap">unwrap</button> -->
+                        <!-- wrapall -->
+                 <!-- <h2>Lorem ipsum dolor sit amet</h2>       
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, eius corrupti fuga voluptatibus aliquam nobis asperiores explicabo reprehenderit voluptas aut recusandae dolorem praesentium 
+           nam, unde natus aliquid consequatur nihil sapiente.</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, eius corrupti fuga voluptatibus aliquam nobis asperiores explicabo reprehenderit voluptas aut recusandae dolorem praesentium 
+            nam, unde natus aliquid consequatur nihil sapiente.</p>
+
+            <br>
+       <button id="wrapall">wrapall</button>
+       <button id="wrapinner">wrapinner</button> -->
+<!--  
+        <div id="box">
+            <center>
+             <h2>helo</h2>
+             <p>Lorem ipsum dolor sit amet.</p>
+            </center>
+         </div>
+         <br>
+         <button id="width">width</button> 
+         <button id="height">height</button> -->
+
+         
+         
+            <!-- <h2>hello</h2>
+  <button id="scrolltop">scrolltop</button> 
+         <button id="scrollleft">scrollleft</button>
+         <br>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, eius corrupti fuga voluptatibus aliquam nobis asperiores explicabo reprehenderit voluptas aut recusandae dolorem praesentium 
+            nam, unde natus aliquid consequatur nihil sapiente.</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, eius corrupti fuga voluptatibus aliquam nobis asperiores explicabo reprehenderit voluptas aut recusandae dolorem praesentium 
+             nam, unde natus aliquid consequatur nihil sapiente.</p>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                 <br> ab neque
+                  molestiae saepe totam corporis sint doloremque? Voluptatibus officiis vero nostrum magnam reprehenderit placeat accusamus, illo ratione pariatur repellat temporibus atque fugiat quae velit excepturi officia quasi error inventore autem. Facilis ab maiores sint quaerat perferendis quo animi ipsam dicta est inventore porro totam laborum a eos dolorem quod ex, nulla quidem corrupti ad ducimus tempora fuga, voluptate culpa. Temporibus deleniti deserunt commodi placeat ipsam qui ratione error numquam. Nisi, veniam vel! Fugit quidem quam aut autem dicta? Fugit illum dignissimos expedita unde 
+                 porro officia accusamus veniam inventore, perspiciatis dolore!</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit iste saepe est aperiam ipsa laboriosam ab? Quisquam ratione quis nesciunt quae, iste
+                 laudantium, ea ad voluptates cupiditate, consectetur consequuntur?
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure incidunt sapiente aliquid vero ex a suscipit cum quia velit ipsa, commodi assumenda labore quas placeat. Eaque atque omnis, nam pariatur vitae ad neque numquam velit excepturi, voluptate, nemo ex magni odit dolore tempora voluptatem adipisci nostrum quaerat necessitatibus minus perferendis maiores officiis ratione? Eum nemo, tempore eius ipsa magnam numquam non reprehenderit atque ad nobis veniam commodi similique suscipit accusamus, aspernatur consequatur quibusdam sit aperiam animi amet mollitia soluta. Quasi similique commodi veritatis non eaque enim libero. Consequuntur aspernatur similique inventore magnam provident placeat fugit quia cum non dignissimos porro vero excepturi, ut hic totam sequi unde aliquam numquam ad dolorum repellendus corrupti, voluptatem iusto rem. Pariatur ad velit magni porro voluptatem cupiditate aspernatur dolorum obcaecati libero ipsa. Maiores esse incidunt reprehenderit eos blanditiis nisi. Sapiente nobis consequuntur, at exercitationem dolorum soluta hic vel voluptatem, quos tempore est debitis pariatur autem architecto ipsam possimus nesciunt deserunt explicabo similique odio porro veritatis voluptas modi nihil? Magni ex repellat odio laboriosam, beatae nemo inventore recusandae consequatur iusto, facere vitae sunt ipsa, dolorum mollitia. Neque commodi cupiditate ratione voluptates mollitia architecto molestiae natus rerum voluptatibus atque, ipsam consequuntur asperiores tempora fugit nobis non eius debitis! Nostrum eveniet fugiat quas facere repudiandae recusandae? Nemo deleniti labore doloremque architecto omnis in, exercitationem at praesentium. Delectus earum modi, praesentium magni dolores minus temporibus debitis, excepturi voluptatum officiis vel minima quod ut aperiam quasi incidunt ratione sequi dolorem! Ad, fugit molestiae itaque quis optio consequuntur hic, eius reiciendis voluptatem a nam dolore? Ex necessitatibus voluptatibus ab adipisci distinctio neque inventore veritatis dolorum facilis voluptatum totam accusantium magni nostrum id sequi consectetur nam et vitae, repudiandae rerum nesciunt laudantium quibusdam consequuntur cumque! Iure necessitatibus beatae cumque ipsum sed atque, reiciendis animi. Veritatis blanditiis porro dolore iste ipsa quos quo accusantium! Minus exercitationem temporibus voluptatem obcaecati facilis quos alias magni tempore at aut iste praesentium totam, eveniet fuga ex doloremque blanditiis saepe itaque aliquid sint laborum a aperiam. Nihil, fugit. Aspernatur inventore optio suscipit quasi neque nihil earum, velit hic doloribus accusamus autem minus eaque fugit nulla laudantium in quia, at facere voluptates dolorum ea ipsam cumque? Quam, velit ducimus cum repudiandae, ab id unde cumque nam qui sapiente veritatis, itaque voluptatem magnam accusantium accusamus corrupti expedita. Ratione nisi minus tempora consequuntur. Neque est suscipit, dolorem aliquid enim, accusamus reprehenderit commodi eligendi in provident vero nesciunt ducimus et ea unde alias! Reprehenderit et vel alias sint veniam expedita mollitia. Fugiat, corrupti voluptatibus nostrum, ut veritatis cumque quo vel dolor, voluptatum saepe facilis. Recusandae corporis, nobis qui quae magni dolor, debitis placeat, possimus delectus repellendus suscipit facilis in odit beatae. Alias repudiandae consequuntur reprehenderit at iste, dolore magnam corporis eum magni. Qui, error consequatur, veniam earum consequuntur nulla, porro soluta ipsam eveniet dolorum similique dignissimos expedita vero ratione. Quam asperiores tempora, explicabo similique ad eos sint mollitia aliquam, laborum neque repudiandae exercitationem nihil sunt rerum illum fugiat, velit perferendis. Inventore nobis illo
+                  dolores quia suscipit voluptatum incidunt sunt, nemo eveniet?
+                <div id="box"></div> -->
+<!--                 
+        <div id="box">
+            <center>
+             <h2>helo</h2>
+             <p>Lorem ipsum dolor sit amet.</p>
+            </center>
+         </div>
+         <br>
+         <button id="hide">hide</button> 
+         <button id="show">show</button> 
+         <button id="toggle">toggle</button> 
+         <button id="fadeTo">fadeTo</button>  -->
+
+         <!-- <div id="box">
+            <center>
+             <h2>helo</h2>
+             <p>Lorem ipsum dolor sit amet.</p>
+            </center>
+         </div>
+         <br>
+         <button id="slideup">slideup</button> 
+         <button id="slideDown">slideDown</button> 
+         <button id="slideToggle">slieToggle</button>  -->
+
+         <!-- <button id="animate">animate</button> -->
+         <!-- <button id="stop">stop</button> -->
+         <!-- <div id="box">
+         
+             <h2>helo</h2>
+             <p>Lorem ipsum dolor sit amet.</p>
+           
+         </div> -->
+        <!-- <p>Lorem ipsum dolor sit, <b>amet consectetur</b> adipisicing elit. Non, illo!</p>
+
+        <ul>
+            <li><b>orange</b></li>
+            <li>apple</li>
+            <li>grapes</li>
+        </ul>
+        <p class="test">Lorem ipsum dolor<span> sit amet consectetur adipisicing</span> elit. Adipisci, ipsa!</p> -->
+        <!-- <li>orange</li>
+            <li>apple</li>
+            <li>grapes</li> -->
+            <!-- <div id="box"><p>Lorem ipsum dolor sit amet.</p></div> -->
+            
+            <p>Lorem ipsum dolor sit, adipisicing elit. Non, illo!</p>
+            <p>Lorem ipsum dolor sit, adipisicing elit. Non, illo!</p>
+            <p>Lorem ipsum dolor sit, adipisicing elit. Non, illo!</p>
+        <script>
+
+
+$(document).ready(function(){
+            $('p').each(function(i){
+                $(this).on("click",{value:i},function(event){
+                    alert(event.data.value)
+                    
+                })
+            })
+        });
+
+
+        // $(document).ready(function(){
+        //     $('#box').on("click dblclick mouseover mouseout",function(event){
+        //         $('h2').html("Event:" + event.type)
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $(document).mousemove(function(){
+        //         $('#box').text("X:"  + event.pageX +"Y:" + event.pageY) 
+        //         var X = event.pageX;
+        //         var Y = event.pageY;
+        //         $('#box').offset({top:Y,left:X})           
+        //     })  
+               
+        //    })
+
+// $(document).ready(function(){
+//                 $('li').each(function(){
+//                     alert($(this).text('hello'));
+//                 })
+                  
+               
+//            })
+
+        //     $(document).ready(function(){
+        //         $('li').has('b,span',).css
+        //           ('background','pink')
+               
+        //    })
+   
+
+            // $(document).ready(function(){
+            //     $('#animate').click(function(){
+            //        $('#box').animate({left : '190px'},'400px');
+            //        $('#box').animate({top: '190px'});
+            //        $('#box').animate({width: '300px'}); 
+            //     })
+            // })
+
+            
+        //     $(document).ready(function(){
+        //         $('#animate').click(function(){
+        //            $('#box').animate({left : '190px'},4000);
+        //            $('#box').animate({bottom : '190px'},3000);
+                
+        //         $('#stop').click(function(){
+        //             $('#box').stop(true,true)
+        //         })
+        //    })
+        //     })
+            // chainaing
+        // $(document).ready(function(){
+        //         $('#animate').click(function(){
+        //            $('#box').css('background','pink').slideToggle(1000);
+               
+        //    })
+        //     })
+
+        // $(document).ready(function(){
+        //         $('#animate').click(function(){
+        //            $('#box').css('background','pink').slideToggle(1000);
+               
+        //    })
+        //     })
+            
+            
+            
+            
+                    // $(document).ready(function(){
+        //     $('#box').click(function(){
+        //         $('#box').css('background-color','blue')
+        //     })
+        // })
+        // $(document).ready(function(){
+        //     $('body').keypress(function(){
+        //         $(this).css('background-color','blue');
+        //     });
+        //     $('body').keyup(function(){
+        //         $(this).css('background','yellow');
+        //     });
+        //     $('body').keydown(function(){
+        //         $(this).css('background','grey');
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $('#sname, #sclass, #scountry').focus(function(){
+        //         $(this).css('background-color','lime')
+        //     });
+        //     $('#sname, #sclass, #scountry').blur(function(){
+        //         $(this).css('background-color','grey')
+        //     });
+        //     $(' #scountry').change(function(){
+        //         var a = $(this).val();
+        //         $('#test').html(a);
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $(window).scroll(function(){
+        //         console.log('you are big')
+        //     })
+        //     $(window).resize(function(){
+        //         console.log('you are big')
+        //     })
+        // })
+        // $(document).ready(function(){
+        //     $('#prepend').click(function(){
+        //         $('#box').prepend('show')
+        //     })
+        //     $('#append').click(function(){
+        //         $('#box').append('show')
+        //     })
+        // })
+        // $(document).ready(function(){
+        //     $('#empty').click(function(){
+        //         $('#box h2').empty();
+        //     })
+        //     $('#remove').click(function(){
+        //         $('#box h2').remove('')
+        //     })
+        // })
+        // $(document).ready(function(){
+        //     $('#append').click(function(){
+        //         $('<h2> khan: gahr').appendTo('#box')
+        //     });
+        
+        // });
+        // $(document).ready(function(){
+        //     $('#clone').click(function(){
+        //         $('#box1 h2').clone().prependTo('#box2');
+        //     })
+        //     $('#clone').click(function(){
+        //         $('#box1 p').clone().appendTo('#box2');
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#replace').click(function(){
+        //         $('#box p:first').replaceWith('khan')
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('#wrap').click(function(){
+        //         $('#box p').wrap('<h2></h2>');
+        //     });
+        //     $('#unwrap').click(function(){
+        //         $('#box p').unwrap();
+        //     });
+     
+        // });
+
+        
+        // $(document).ready(function(){
+        //     $('#wrapall').click(function(){
+        //         $('p').wrapAll('<h2></h2>');
+        //     });
+        //     $('#wrapinner').click(function(){
+        //         $('h2').wrapInner('<span class="red"></span>');
+        //     });
+     
+        // });
+
+        //   $(document).ready(function(){
+        //     $('#widht').click(function(){
+        //       alert("widht :" + $('#box').width());
+        //       alert("innerWidht :" + $('#box').innerWidth());
+        //       alert("outerWidth :" + $('#box').outerWidth());
+        //       alert("outerWidth(ture) :" + $('#box').outerWidth());
+        //     });
+        // });
+
+        
+        // $(document).ready(function(){
+        //     $(window).scroll(function(){
+        //         alert( $(window).scrollLeft());
+        //         alert( $(window).scrollTop());
+        //     });
+               
+        //     });
+        // $(document).ready(function(){
+        //     $(window).scroll(function(){
+        //         $('#box').html("");
+        //         $('#box').append("top :" + $(window).scrollTop());
+        //         $('#box').append("<br>left :" + $(window).scrollLeft());
+             
+        //     });
+               
+        //     });
+
+
+        //   $(document).ready(function(){
+        //     $('#hasclass').click(function(){
+        //        alert( $('#box ').hasClass('test'));
+        //     });
+        
+        // });
+
+        // $(document).ready(function(){
+        //     $('#toggle').click(function(){
+        //      $('#box').toggle()
+        //     });
+        
+        // });
+        // $(document).ready(function(){
+        //     $('#toggle').click(function(){
+        //      $('#box').fadeToggle()
+        //     });
+        
+        // });
+
+
+
+        // $(document).ready(function(){
+        //     $('#fadeTo').click(function(){
+        //      $('#box').fadeOut(2000,0.2);
+        //     });
+        
+        // });
+        // $(document).ready(function(){
+        //     $('#slideup').click(function(){
+        //      $('#box').slideUp();
+        //     });
+        //     $('#slidedown').click(function(){
+        //      $('#box').slideDown();
+        //     });
+        //     $('#slideToggle').click(function(){
+        //      $('#box').slideToggle();
+        //     });
+        
+        // }); 
+
+
+     
+        
+           
+
+    </script>
+</body>
+</html>
